@@ -9,6 +9,8 @@
     date_default_timezone_set('America/Sao_Paulo');
     include '../../config/config.php';
 
+    error_reporting(E_ALL & ~E_NOTICE);
+
     $all_products = $mysqli->query("SELECT * FROM produto");
 
     $products = array();

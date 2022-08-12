@@ -9,8 +9,6 @@
     date_default_timezone_set('America/Sao_Paulo');
     include '../../config/config.php';
 
-    error_reporting(E_ALL & ~E_NOTICE);
-
     $json = json_decode(file_get_contents("php://input"));
 
 
